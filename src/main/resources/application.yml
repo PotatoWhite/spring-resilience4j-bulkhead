@@ -1,0 +1,12 @@
+resilience4j:
+  bulkhead:
+    instances:
+      sampleBulkhead:
+        maxConcurrentCalls: 3
+        maxWaitDuration: 1s
+  thread-pool-bulkhead:
+    instances:
+      sampleThreadPoolBulkhead:
+        maxThreadPoolSize: 3
+        coreThreadPoolSize: 2
+        queueCapacity: 1
